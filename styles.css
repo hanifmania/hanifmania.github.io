@@ -1,45 +1,86 @@
-/* styles.css */
-body {
-    font-family: Arial, sans-serif;
+/* Reset some default styles */
+body, h1, h2, h3, p, ul {
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
     background-color: #f7f7f7;
+    color: #333;
 }
 
-header, footer, section {
-    padding: 20px;
-    margin: 20px auto;
+.header {
+    background-color: #444;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-content {
     max-width: 800px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
 }
 
-header h1 {
-    margin: 0;
+.name {
     font-size: 36px;
+    margin-bottom: 10px;
 }
 
-header p {
-    margin-top: 5px;
+.job-title {
     font-size: 18px;
-    color: #666;
 }
 
-h2 {
+.section {
+    padding: 40px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.section-title {
     font-size: 24px;
-}
-
-h3 {
-    font-size: 20px;
-}
-
-.project {
     margin-bottom: 20px;
 }
 
-footer {
-    text-align: center;
-    font-size: 14px;
-    color: #999;
+.section-text {
+    font-size: 16px;
+    line-height: 1.5;
 }
+
+.publication-list {
+    list-style-type: none;
+    margin-top: 10px;
+    padding-left: 0;
+}
+
+.publication-list li {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.project {
+    margin: 20px 0;
+}
+
+.project-title {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.project-description {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.footer {
+    background-color: #444;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer-text {
+    font-size: 14px;
+}
+
+/* Add more custom styles as needed */
