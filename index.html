@@ -1,12 +1,72 @@
 <!DOCTYPE html>
 <html>
 <head profile="http://www.w3.org/2005/10/profile">
-<link rel="icon" 
-      type="image/png" 
-      href="./img/favicon.webp">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Muhammad Hanif</title>
-<link rel="stylesheet" href="./stylesheet.css">
+    <link rel="icon" 
+          type="image/png" 
+          href="./img/favicon.webp">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Muhammad Hanif</title>
+    <link rel="stylesheet" href="./stylesheet.css">
+    <style>
+        .main {
+            margin-top: -160px; /* Adjust the margin-top as needed */
+        }
+        .about_links {
+            text-align: center; /* Align the logos to the center */
+        }
+        .about_links img {
+            width: 40px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+            margin-right: -30px; /* Add margin to the right of each logo */
+        }
+        .about_text h2 {
+            font-family: Arial, sans-serif; /* Specify font family */
+            font-size: 20px; /* Specify font size */
+            font-weight: normal; /* Specify font weight */
+            margin-top: -10px; /* Adjust margin-top as needed */
+            color: gray; /* Change text color to gray */
+        }
+        .interests,
+        .education {
+            font-size: 14px; /* Adjust font size for interests and education */
+        }
+        .interests {
+            float: left; /* Align interests section to the left */
+            width: 50%; /* Set width to 50% for side by side layout */
+        }
+        .interests ul {
+            list-style: none; /* Remove bullet points */
+            padding: 0; /* Remove default padding */
+            text-align: center; /* Center-align text */
+        }
+        .education {
+            float: left; /* Align education section to the left */
+            width: 50%; /* Set width to 50% for side by side layout */
+        }
+        .education ul {
+            list-style: none; /* Remove default list styles */
+            padding: 0; /* Remove default padding */
+        }
+        .education ul li {
+            display: flex; /* Use flexbox for layout */
+            align-items: center; /* Center align items vertically */
+            margin-bottom: 10px; /* Add bottom margin for spacing */
+        }
+        .education ul li img {
+            width: 30px; /* Adjust the width of the logos */
+            height: 30px; /* Maintain aspect ratio */
+            margin-right: 0px; /* Add margin to the right of each logo */
+            margin-left: 10px; /* Add margin to the right of each logo */
+        }
+        .education ul li span {
+            flex: 1; /* Take remaining space */
+        }
+        .status {
+            display: block; /* Make the text appear on a separate line */
+            font-size: 14px; /* Adjust font size as needed */
+            color: gray; /* Change text color if necessary */
+        }
+    </style>
 </head>
 <body>
 
@@ -32,17 +92,57 @@
 
     <div class="about_text">
         <h1>Muhammad Hanif</h1>
+        <h2>PhD Candidate in Systems and Control Engineering</h2>
+        <h2>Tokyo Institute of Technology</h2>
 
-        <p>Assalamualaikum, I'm Muhammad Hanif, but you can call me Hanif.</p>
-        <p>I am a robotics engineer and researcher. Welcome to my website.</p>
         <div class="about_links">
-            <a class="about_links" target="blank" href="https://www.linkedin.com/in/muhammad-hanif-6189b0157/">LinkedIn</a>
-            <a class="about_links" target="blank" href="https://scholar.google.com/citations?user=sgbkglMAAAAJ&hl=en">Google Scholar</a>
+            <a class="about_links" target="blank" href="https://www.linkedin.com/in/muhammad-hanif-6189b0157/"><img src="./img/linkedin_icon.webp" alt="LinkedIn"></a>
+            <a class="about_links" target="blank" href="https://scholar.google.com/citations?user=sgbkglMAAAAJ&hl=en"><img src="./img/google_scholar_icon.webp" alt="Google Scholar"></a>
+            <a class="about_links" target="blank" href="https://orcid.org/0009-0001-0475-8711"><img src="./img/orchid_icon.webp" alt="ORCID"></a>
+            <a class="about_links" target="blank" href="https://github.com/hanifmania"><img src="./img/github_icon.webp" alt="Github"></a>
         </div>
+
+        <p>I'm a PhD candidate in Systems and Control Engineering at Tokyo Institute of Technology, focusing on robotics and autonomous system. My research focuses on multi-robot system including multi-robot coverage control and multi-robot task allocation mission.</p>
+        
+        <div class="interests">
+            <h3>Interests</h3>
+            <ul>
+                <li>&#8226; Robotics</li>
+                <li>&#8226; Machine Learning</li>
+                <li>&#8226; Planning and Control</li>
+            </ul>
+        </div>
+        
+        <div class="education">
+            <h3>Education</h3>
+            <ul>
+                <li>
+                    <img src="./img/tit_logo.webp" alt="Tokyo Institute of Technology"> 
+                    <span>
+                        Tokyo Institute of Technology <br>
+                        <span class="status">PhD Candidate in Systems and Control Engineering</span>
+                    </span>
+                </li>
+                <li>
+                    <img src="./img/tit_logo.webp" alt="Tokyo Institute of Technology"> 
+                    <span>
+                        Tokyo Institute of Technology <br>
+                        <span class="status">M.Eng in Systems and Control Engineering</span>
+                    </span>
+                </li>
+                <li>
+                    <img src="./img/bit_logo.webp" alt="Bandung Institute of Technology"> 
+                    <span>
+                        Bandung Institute of Technology <br>
+                        <span class="status">B.Sc in Electrical Engineering</span>
+                    </span>
+                </li>
+            </ul>
+        </div>
+        
     </div>
+
 </div>
 
-
-
 </body>
-</html> 
+</html>
