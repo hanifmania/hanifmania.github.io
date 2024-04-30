@@ -28,7 +28,7 @@
         }
         .interests,
         .education {
-            font-size: 14px; /* Adjust font size for interests and education */
+            text-align: left; /* Align text to the left */
         }
         .interests {
             float: left; /* Align interests section to the left */
@@ -37,7 +37,9 @@
         .interests ul {
             list-style: none; /* Remove bullet points */
             padding: 0; /* Remove default padding */
-            text-align: center; /* Center-align text */
+        }
+        .interests ul li {
+            margin-bottom: 10px; /* Add bottom margin for spacing */
         }
         .education {
             float: left; /* Align education section to the left */
@@ -49,20 +51,20 @@
         }
         .education ul li {
             display: flex; /* Use flexbox for layout */
-            align-items: center; /* Center align items vertically */
+            align-items: flex-start; /* Align items to the top */
             margin-bottom: 10px; /* Add bottom margin for spacing */
         }
         .education ul li img {
             width: 30px; /* Adjust the width of the logos */
             height: 30px; /* Maintain aspect ratio */
-            margin-right: 0px; /* Add margin to the right of each logo */
-            margin-left: 10px; /* Add margin to the right of each logo */
+            margin-right: 10px; /* Add margin to the right of each logo */
         }
         .education ul li span {
-            flex: 1; /* Take remaining space */
+            display: flex; /* Use flexbox */
+            flex-direction: column; /* Stack items vertically */
+            align-items: flex-start; /* Align items to the left */
         }
         .status {
-            display: block; /* Make the text appear on a separate line */
             font-size: 14px; /* Adjust font size as needed */
             color: gray; /* Change text color if necessary */
         }
